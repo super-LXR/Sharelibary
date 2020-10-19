@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="icon" href="<%= BASE_URL %>favicon.ico">
+		<!-- 在vue.config.js中配饰了htmlWebpackPlugin插件，通过isprod的不同值来决定页面渲染 -->
+		<title>
+			<%= htmlWebpackPlugin.options.isProd ? '' : 'dev - ' %>西柚图书共享</title>
+
+		<% if(htmlWebpackPlugin.options.isProd){ %>
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/nprogress/0.2.0/nprogress.min.css" />
+		<link rel="stylesheet" href="https://unpkg.com/vxe-table/lib/index.css">
+		<!-- 引入脚本 注意引入顺序-->
+		<script src="https://cdn.staticfile.org/vue/2.6.10/vue.min.js"></script>
+		<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+		<script src="https://cdn.staticfile.org/vue-router/3.1.3/vue-router.min.js"></script>
+		<script src="https://cdn.staticfile.org/vuex/3.0.1/vuex.min.js"></script>
+		<script src="https://cdn.staticfile.org/nprogress/0.2.0/nprogress.min.js"></script>
+		<script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+		<script src="https://unpkg.com/xe-utils"></script>
+		<script src="https://unpkg.com/vxe-table"></script>
+		<% } %>
+	</head>
+	<body>
+		<div id="app"></div>
+		<!-- built files will be auto injected -->
+	</body>
+</html>

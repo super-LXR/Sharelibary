@@ -1,0 +1,32 @@
+/**
+ * 全局样式表
+ */
+html,
+body,
+#app {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	min-width: 1920px;
+	min-height: 1080px;
+}
+
+.el-dialog__body {
+	min-width: 500px;
+	min-height: 200px;
+}
+
+.el-dialog {
+	min-width: 800px;
+}
+
+.el-breadcrumb {
+	margin-bottom: 3px;
+	font-size: 10px;
+	background-color: white;
+}
+
+.el-card {
+	background-color: rgba(255, 255, 255, 0.7);
+}
