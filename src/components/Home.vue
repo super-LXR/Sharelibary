@@ -1,5 +1,6 @@
 <template>
-  <el-container class="home-container">
+<div  class="home-container-div">
+  <el-container  class="home-container">
     <!-- 头部区域 -->
     <el-header>
       <el-menu background-color="#494353" :default-active="activeIndex" text-color="#fff" active-text-color="#ffd04b"
@@ -67,6 +68,7 @@
       </div>
     </el-footer> -->
   </el-container>
+</div>
 </template>
 
 
@@ -205,11 +207,14 @@
 
 
 <style scoped="scoped">
-  .home-container {
+  .home-container{
     /*background-image: url("../images/bg_login.png");*/
-    height: 100%;
+  height: 100%;
   }
-
+ /* .home-container{
+    margin :0 auto;
+   width: 100%;
+ } */
   .el-header {
     background-color: #494353;
     display: flex;
